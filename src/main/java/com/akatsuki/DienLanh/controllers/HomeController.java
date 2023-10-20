@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.akatsuki.DienLanh.model.User;
@@ -17,8 +18,6 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String Home() {
-		List<User> users = userService.findAllUsers();
-		System.out.println(users);
 		return "index";
 	}
 }
