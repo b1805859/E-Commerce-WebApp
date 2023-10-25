@@ -1,13 +1,11 @@
-package com.akatsuki.DienLanh.controllers;
+package com.akatsuki.DienLanh.controller;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.akatsuki.DienLanh.model.User;
 import com.akatsuki.DienLanh.service.UserService;
 
 @Controller

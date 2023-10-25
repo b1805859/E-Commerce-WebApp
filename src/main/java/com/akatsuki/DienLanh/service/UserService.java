@@ -12,7 +12,7 @@ import com.akatsuki.DienLanh.repositories.UserRepository;
 
 public interface UserService {
 	
-    User findById(Long id);
+    Optional<User> findById(Long id);
  
     void saveUser(User user);
  
